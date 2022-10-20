@@ -5,3 +5,25 @@
 # 47756688399943 -> [5]
 # 1113384455229 -> [8,9]
 # 1115566773322 -> []
+
+from ast import Delete
+
+
+lst=input("Введите число:\n")
+
+new_lst=[]
+
+try:
+    for i in range(len(lst)):
+        if int(lst[i]):
+            if lst.count(lst[i])==1:                                                
+                new_lst.append(lst[i])
+
+    print(f"Список из неповторяющихся элементов: {new_lst}")                
+except:
+    print("Введите только числа!")               
+
+
+
+      
+
